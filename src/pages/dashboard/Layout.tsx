@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react';
-import Header from '../dashboard/Header';
-import Sidebar from '../dashboard/Sidebar';
+import Header from './Header';
+import Sidebar from './Sidebar';
 import { Box } from '@mui/material';
 
 interface LayoutProps {

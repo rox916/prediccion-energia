@@ -1,7 +1,10 @@
 import React from 'react';
-import Layout from './components/common/Layout';
+import Layout from './pages/dashboard/Layout';
 import { Box, Typography } from '@mui/material';
 
+import NLQuestion from "./components/NLQuestion";
+import PredictionForm from "./components/PredictionForm";
+import PredictionChart from "./components/PredictionChart";
 const App: React.FC = () => {
   return (
     <Layout>
@@ -13,6 +16,17 @@ const App: React.FC = () => {
           Este es el espacio para tus componentes.
         </Typography>
         {/* Aquí es donde los demás insertarán sus componentes */}
+        <Box sx={{ mt: 4 }}>
+          <NLQuestion />
+        </Box>
+
+        <Box sx={{ mt: 4 }}>
+          <PredictionForm />
+        </Box>
+
+        <Box sx={{ mt: 4 }}>
+          <PredictionChart />
+        </Box>
       </Box>
     </Layout>
   );
